@@ -6,7 +6,7 @@
     "activeTab"
   ],
   "background": {
-	"css": ["drooltip.css"],
+  "css": ["drooltip.css"],
     "scripts": ["drooltip.js","background.js"],
     "persistent": true
   },
@@ -17,9 +17,9 @@
 
   "content_scripts": [
     {
-		"css": ["drooltip.css"],
+    "css": ["drooltip.css"],
     "js": ["drooltip.js"],
-		"matches": ["http://*/*", "https://*/*"]
+    "matches": ["http://*/*", "https://*/*"]
     }
 ]
 
