@@ -1,0 +1,26 @@
+{
+  "name": "hfsday",
+  "description": "Shows large numbers in terms of 9/11 civilian casualties.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+	"css": ["drooltip.css"],
+    "scripts": ["drooltip.js","background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Shows large numbers in terms of 9/11 civilian casualties. Useful for reading about American adventurism done in its name."
+  },
+  "manifest_version": 2,
+
+  "content_scripts": [
+    {
+		"css": ["drooltip.css"],
+    "js": ["drooltip.js"],
+		"matches": ["http://*/*", "https://*/*"]
+    }
+]
+
+}
